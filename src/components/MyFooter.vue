@@ -1,6 +1,12 @@
 <template>
     <footer>
-        <h2>Footer</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Footer</h2>
+          </div>
+        </div>
+      </div>
     </footer>
 </template>
 
@@ -13,5 +19,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  
 </style>

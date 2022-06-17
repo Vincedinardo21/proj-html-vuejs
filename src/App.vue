@@ -6,7 +6,7 @@
       <!-- Main -->
       <main>
         <!-- Jumbotron -->
-
+        
         <!-- Browse by category -->
 
         <!-- Users testimonials -->
@@ -38,12 +38,25 @@ export default {
 </script>
 
 <style lang="scss">
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  // Debug
+  border: 1px solid black;
+  min-height: 100px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  //margin-top: 60px;
 }
 </style>
