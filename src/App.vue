@@ -6,7 +6,7 @@
       <!-- Main -->
       <main>
         <!-- Jumbotron -->
-        
+        <MyJumbotron/>
         <!-- Browse by category -->
 
         <!-- Users testimonials -->
@@ -26,12 +26,14 @@
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MyJumbotron from './components/MyJumbotron.vue'
 import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
+    MyJumbotron,
     MyFooter
   }
 }
@@ -48,7 +50,7 @@ export default {
 [class*="col-"] {
   // Debug
   border: 1px solid black;
-  min-height: 100px;
+  min-height: 50px;
 }
 
 #app {
