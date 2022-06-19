@@ -4,17 +4,20 @@
             <div class="col-12 jumbo-up"></div>
             <!-- Image Background -->
             <div class="col-12 jumbo-banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-learn">
-                            <div>
-                                <span>FIND THE BEST ANIMAL SUPPLIES</span>
-                                <h2>We know animals are a part of your family, let us help take care of them.</h2>
-                                <div class="btn-learn"><a href="#">Learn more about us</a></div>
-                            </div>                        
+                <div class="jumbo-fade">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-learn">
+                                <div>
+                                    <span>FIND THE BEST ANIMAL SUPPLIES</span>
+                                    <h2>We know animals are a part of your family, let us help take care of them.</h2>
+                                    <div class="btn-learn"><a href="#">Learn more about us</a></div>
+                                </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="col-12"></div>
         </div>
@@ -30,12 +33,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .jumbo-fade{
+        background-color: rgba(0,0,0,0.3);
+        
+    }
     .jumbo-up {
         background-color: aquamarine;
     }
     .jumbo-banner {
         height: 760px;
-        background-image: url("../assets/img/banner-5-2x-scaled.jpg");
+        background-image: url("../assets/img/banner-5-2x-scaled.jpg");    
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
