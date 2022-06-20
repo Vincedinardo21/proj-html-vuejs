@@ -29,6 +29,33 @@
                     </div>
                 </div>
             </div>
+
+            <!-- New arrivals weeckly -->
+            <div class="col-12 arrivals-banner">       
+                <div class="arrivals-text">
+                    <div>FIND THE BEST ANIMAL SUPPLIES</div>
+                    <h2>New arrivals weekly</h2>
+                    <div class="btn-card"><a href="#">Learn more about us</a></div>
+                </div>
+            </div>
+
+            <!-- Best sellers -->
+            <div class="col-12">
+                <div class="seller-container">
+                    <div class="text-and-btn">
+                        <div>All-time best sellers</div>
+                        <div class="btn-card"><a href="#">View all products</a></div>
+                    </div> 
+                    <h3>Items everyone loves</h3>
+                    <div class="items-container">
+                        <div class="item-card" v-for="(item, i) in items" :key="i">
+                            <img :src="item.image" :alt="item.text">
+                            <h5>{{item.text}}</h5>
+                            <span class="line">{{item.discount}}</span> <span class="green-text">{{item.price}}</span> 
+                        </div>  
+                    </div>               
+                </div>              
+            </div>
         </div>
     </div>
 </template>
@@ -80,6 +107,33 @@ export default {
                 image : require("../assets/img/food-transparent-16.png"),
                 btn : "frozen food"
             }
+        ],
+
+        items : [
+            {
+                image : require("../assets/img/product-21.jpg"),
+                text : "Transport cage",
+                price : "$25.00",
+                discount : ""
+            },
+            {
+                image : require("../assets/img/product-20.jpg"),
+                text : "Dog leash",
+                price : "$25.00",
+                discount : ""
+            },
+            {
+                image : require("../assets/img/product-16.jpg"),
+                text : "Animal transport cage",
+                price : "$25.00",
+                discount : "$35.00"
+            },
+            {
+                image : require("../assets/img/product-11.jpg"),
+                text : "Colorful cat leash",
+                price : "$12.00",
+                discount : ""
+            }
         ]
     }
   } 
@@ -103,6 +157,16 @@ export default {
     .food-container {
         margin: 20px 0;
     }
+
+    .btn-card {
+            a {
+                background-color: rgb(61, 111, 66);
+                color: white;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 40px;
+            }
+        }
     .food-card {
         background-image: url("../assets/img/bg-transparent-3.png");
         background-color: #2a382a;
@@ -119,16 +183,39 @@ export default {
 
         h5 {
             color: #59b742
+        }        
+    }
+    .arrivals-banner {
+        height: 500px;
+        background-image: url("../assets/img/banner-3-2x-scaled.jpg");
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-and-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .items-container {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 310px;
         }
 
-        .btn-card {
-            a {
-                background-color: rgb(61, 111, 66);
-                color: white;
-                text-decoration: none;
-                padding: 10px 25px;
-                border-radius: 40px;
-            }
+        .line {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .green-text {
+            color: green;
         }
     }
+
 </style>
