@@ -10,11 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faBoxArchive } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faUser)
 library.add(faBoxArchive)
 library.add(faMagnifyingGlass)
+library.add(faChevronDown)
+library.add(faClock)
+library.add(faCheck)
+library.add(faBookOpen)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

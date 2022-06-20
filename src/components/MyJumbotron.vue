@@ -1,7 +1,20 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbo-up"></div>
+            <div class="col-12 jumbo-up-back">
+                <!-- Jumbo up -->
+                <div class="container">
+                    <div class="row">      
+                        <div class="col-12 jumbo-up">
+                            <div><font-awesome-icon icon="fa-solid fa-book-open" /><b> International</b> Shipping Services</div>
+                            <div><font-awesome-icon icon="fa-regular fa-clock" /> See our <b>store hours</b> and services</div>
+                            <div><font-awesome-icon icon="fa-solid fa-check" /> We price match to give you the <b>best deals</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
 
             <!-- Image Background -->
             <div class="col-12 jumbo-banner">
@@ -37,8 +50,17 @@ export default {
     .jumbo-fade{
         background-color: rgba(0,0,0,0.3);       
     }
+
+    .jumbo-up-back {
+        background-image: url("../assets/img/bg-transparent-3.png");
+        background-color: #2a382a;
+        color: white;
+    }
     .jumbo-up {
-        background-color: aquamarine;
+        height: 60px;     
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     .jumbo-banner {
         height: 760px;

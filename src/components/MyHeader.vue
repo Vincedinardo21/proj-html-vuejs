@@ -10,7 +10,7 @@
               <img src="../assets/img/dark-pet-logo.png" alt="Logo">
               <!-- Searchbar -->
               <div class="my-searchbar">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>      
                 <input type="text" placeholder="Search...">
               </div>
               
@@ -18,8 +18,8 @@
               <div><b>Questions?</b> Call us : 1.800.123.4567</div>
               <!-- Accedi -->
               <div class="icons">
-                <font-awesome-icon icon="fa-solid fa-box-archive" />
-                <font-awesome-icon icon="fa-regular fa-user" />
+                <a href="#"><font-awesome-icon icon="fa-solid fa-box-archive" /></a>
+                <a href="#"><font-awesome-icon icon="fa-regular fa-user" /></a>        
               </div>
             </div>
           </div>            
@@ -32,7 +32,10 @@
           <div class="row">
             <div class="col-12">
               <ul>
-                <li v-for="(item, i) in navBar" :key="i"><a :href="item.link">{{item.text}}</a></li>
+                <li v-for="(item, i) in navBar" :key="i"><a :href="item.link">
+                  {{item.text}}
+                  <font-awesome-icon :icon="item.arrow" />
+                </a></li>
               </ul>
             </div>
           </div>
@@ -51,26 +54,32 @@ export default {
         {
           text : "Home",
           link : "#",
+          arrow : "fa-solid fa-chevron-down"
         },
         {
           text : "Shop",
           link : "#",
+          arrow : "fa-solid fa-chevron-down"
         },
         {
           text : "About",
           link : "#",
+          arrow : ""
         },
         {
           text : "Blog",
           link : "#",
+          arrow : ""
         },
         {
           text : "Contact",
           link : "#",
+          arrow : ""
         },
         {
           text : "Shop by brand",
           link : "#",
+          arrow : "fa-solid fa-chevron-down"
         },
       ]
     }
@@ -122,6 +131,7 @@ export default {
 
     [class*="fa-"]{
       margin: 0 10px;
+      color: black;
     }
   }
 </style>
