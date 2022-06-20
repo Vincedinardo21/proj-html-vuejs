@@ -91,8 +91,10 @@ export default {
 <style scoped lang="scss">
   .container {
     ul{
+      height: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
       
       li{
         list-style-type: none;

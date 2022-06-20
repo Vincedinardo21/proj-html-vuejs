@@ -33,7 +33,15 @@
                 </div>               
             </div>
             
-            <div class="col-12"></div>
+            <!-- Jumbo down -->
+            <div class="col-12 jumbo-down">
+                <div>
+                    <img src="../assets/img/food-transparent-5.png" alt="food">
+                    <span>Get $25 OFF your first purchase of our homemade pet food!</span> 
+                    <a href="#">Visit the shop</a>
+                </div>
+                
+            </div>
         </div>
     </div>
 </template>
@@ -96,6 +104,29 @@ export default {
                     color: white;
                 }
             }
+        }
+    }
+    .jumbo-down {
+        background-image: url("../assets/img/bg-transparent-3.png");
+        background-color: #2a382a;
+        color: white;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: rgb(188, 194, 189);
+            }
+
+            span {
+                margin: 0 50px;
+            }
+        }
+
+        img {
+            width: 200px;
         }
     }
 </style>
