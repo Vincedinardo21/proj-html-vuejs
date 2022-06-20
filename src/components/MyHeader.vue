@@ -5,15 +5,22 @@
       <section class="logo-container">
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 area-flex">
               <!-- Logo -->
               <img src="../assets/img/dark-pet-logo.png" alt="Logo">
               <!-- Searchbar -->
-              <input type="text" placeholder="Search...">
+              <div class="my-searchbar">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                <input type="text" placeholder="Search...">
+              </div>
+              
               <!-- Questions -->
-              <div>Questions? Call us: 1.800.123.4567</div>
+              <div><b>Questions?</b> Call us : 1.800.123.4567</div>
               <!-- Accedi -->
-              <div>Icone...</div>
+              <div class="icons">
+                <font-awesome-icon icon="fa-solid fa-box-archive" />
+                <font-awesome-icon icon="fa-regular fa-user" />
+              </div>
             </div>
           </div>            
         </div>
@@ -43,7 +50,7 @@ export default {
       navBar : [
         {
           text : "Home",
-          link : "https://bootstrap-vue.org/docs",
+          link : "#",
         },
         {
           text : "Shop",
@@ -73,9 +80,48 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .container {
+    ul{
+      display: flex;
+      justify-content: center;
+      
+      li{
+        list-style-type: none;
+        margin: 0 30px;
+
+        a{
+          text-decoration: none;
+          color: gray;
+        }
+      }
+    }
+  }
+  .area-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .logo-container{
     // Debug
-    background-color: aqua;
+    // background-color: aqua;
+    padding: 20px 0;
     border-bottom: 1px solid gray;
+
+    .my-searchbar {
+      width: 320px;
+      padding: 7px;
+      
+      border-radius: 20px;
+      background-color:rgb(243, 243, 243);
+    }
+
+    input {
+      border: none;
+      background-color:rgb(243, 243, 243);
+    }
+
+    [class*="fa-"]{
+      margin: 0 10px;
+    }
   }
 </style>
