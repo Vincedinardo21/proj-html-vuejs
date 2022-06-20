@@ -2,6 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbo-up"></div>
+
             <!-- Image Background -->
             <div class="col-12 jumbo-banner">
                 <div class="jumbo-fade">
@@ -16,9 +17,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>               
             </div>
+            
             <div class="col-12"></div>
         </div>
     </div>
@@ -34,8 +35,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     .jumbo-fade{
-        background-color: rgba(0,0,0,0.3);
-        
+        background-color: rgba(0,0,0,0.3);       
     }
     .jumbo-up {
         background-color: aquamarine;

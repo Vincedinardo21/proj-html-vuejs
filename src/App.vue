@@ -8,7 +8,7 @@
         <!-- Jumbotron -->
         <MyJumbotron/>
         <!-- Browse by category -->
-
+        <BrowseBy/>
         <!-- Users testimonials -->
 
         <!-- Get tips -->
@@ -28,14 +28,16 @@
 import MyHeader from './components/MyHeader.vue'
 import MyJumbotron from './components/MyJumbotron.vue'
 import MyFooter from './components/MyFooter.vue'
+import BrowseBy from './components/BrowseBy.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyJumbotron,
-    MyFooter
-  }
+    MyFooter,
+    BrowseBy
+}
 }
 </script>
 
