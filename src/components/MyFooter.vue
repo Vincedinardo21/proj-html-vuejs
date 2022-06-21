@@ -74,11 +74,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     footer{
+      
+
+      li{
+        list-style-type: none;
+        margin: 30px 0;
+      }
+      padding: 100px 0;
       color: white;
       background-color: #2a382a;
 
       img{
         width: 200px;
+        margin: 30px 0;
       }
     }
     .btn-card {
@@ -105,18 +113,23 @@ export default {
         }
 
     .subscribe{
-      background-color: aquamarine;
+      background-image: url("../assets/img/bg-transparent-3.png");
+      background-size: 350px;
+      background-repeat: repeat-x;
+      background-color: rgb(38, 66, 41);
       width: 300px;
       border-radius: 5px;
       padding: 30px;
     }
 
     .my-content {
+      padding-bottom: 60px;
       display: flex;
       justify-content: space-between;
     }
 
     .down-footer{
+      padding-top: 40px;
       border-top: 1px solid gray;
       text-align: center;
       ul{

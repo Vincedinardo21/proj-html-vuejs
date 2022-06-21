@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>New products arrival</h2>
-                    <div>Latest product</div>
+                    <div id="latest">Latest product</div>
                     <div class="card-container">
                         <div class="my-card" v-for="(item, i) in newProducts" :key="i">
                             <img :src="item.image" :alt="item.text">
@@ -69,7 +69,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     section{
+        padding-bottom: 100px;
         text-align: center;
+
+        h2{
+            margin-top: 100px;
+        }
+
+        #latest{
+            color: green;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        
     }
     .card-container{
         display: flex;

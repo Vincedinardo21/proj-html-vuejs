@@ -2,12 +2,19 @@
     <div class="container-fluid">       
         <div class="row">
             <div class="col-6 img-container-L">
-                <div>FIND THE BEST ANIMAL SUPPLIES</div>
-                <h2>Popular accessories</h2>
+                <div>
+                    <div>FIND THE BEST ANIMAL SUPPLIES</div>
+                    <h2>Popular accessories</h2>
+                    <div class="btn-card"><a href="#">View all toys accessories</a></div>
+                </div>        
             </div>
+
             <div class="col-6 img-container-R">
-                <div>FIND THE BEST FOOD</div>
-                <h2>New food arrival</h2>
+                <div>
+                    <div>FIND THE BEST FOOD</div>
+                    <h2>New food arrival</h2>
+                    <div class="btn-card"><a href="#">View all food products</a></div>
+                </div>       
             </div>
         </div>
         
@@ -38,6 +45,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     .img-container-L, .img-container-R {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-size: cover;
         height: 500px;
         color: white;
@@ -62,4 +73,14 @@ export default {
         justify-content: space-around;
         align-items: center;
     }
+
+    .btn-card {
+            a {
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 40px;
+            }
+        }
 </style>

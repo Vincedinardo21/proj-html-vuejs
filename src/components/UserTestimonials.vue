@@ -49,13 +49,15 @@ export default {
 <style scoped lang="scss">
 
     section {
-        
         text-align: center;
         color: white;
         background-image: url("../assets/img/bg-transparent-3.png");
         background-color: #2a382a;
         background-repeat: repeat-x;
         
+        h2 {
+            margin: 60px 0;
+        }
 
         .height {
             height: 550px;

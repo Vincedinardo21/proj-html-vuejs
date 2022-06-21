@@ -55,7 +55,9 @@ export default {
 <style scoped lang="scss">
     h2, #recent {
       text-align: center;
+      margin: 30px 0;
     }
+
 
     #recent{
       color: green;
