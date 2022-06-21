@@ -11,10 +11,10 @@
             <!-- Products card-->
             <div class="col-12">
                 <div class="products-container">
-                    <div class="my-card" v-for="(item, i) in products" :key="i">
+                    <a href="#" class="my-card" v-for="(item, i) in products" :key="i">
                         <img :src="item.image" :alt="item.text">
                         {{item.text}} ({{item.quantity}})
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -48,11 +48,11 @@
                     </div> 
                     <h3>Items everyone loves</h3>
                     <div class="items-container">
-                        <div class="item-card" v-for="(item, i) in items" :key="i">
+                        <a href="#" class="item-card" v-for="(item, i) in items" :key="i">
                             <img :src="item.image" :alt="item.text">
                             <h5>{{item.text}}</h5>
                             <span class="line">{{item.discount}}</span> <span class="green-text">{{item.price}}</span> 
-                        </div>  
+                        </a>  
                     </div>               
                 </div>              
             </div>
@@ -145,6 +145,10 @@ export default {
     .container {
         text-align: center;
 
+        a {
+            text-decoration: none;
+            color: black;
+        }         
         h2 {
             margin-top: 100px;
         }

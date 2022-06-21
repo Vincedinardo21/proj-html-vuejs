@@ -6,11 +6,11 @@
             <h2>Get the best tips & tricks</h2>
             <div id="recent">Recent articles</div>
             <div class="card-container">
-              <div class="my-card" v-for="(item, i) in tips" :key="i">
+              <a href="#" class="my-card" v-for="(item, i) in tips" :key="i">
                 <img :src="item.image" :alt="item.text">
                 <div>{{item.text}}</div>
                 <div id="data">{{item.data}}</div>
-              </div>
+              </a>
             </div>
             <div class="btn-card"><a href="#">Read all articles</a></div>
           </div>
@@ -58,6 +58,10 @@ export default {
       margin: 30px 0;
     }
 
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
     #recent{
       color: green;

@@ -6,11 +6,11 @@
                     <h2>New products arrival</h2>
                     <div id="latest">Latest product</div>
                     <div class="card-container">
-                        <div class="my-card" v-for="(item, i) in newProducts" :key="i">
+                        <a href="#" class="my-card" v-for="(item, i) in newProducts" :key="i">
                             <img :src="item.image" :alt="item.text">
                             <h5>{{item.text}}</h5>
                             <span id="discount">{{item.discount}}</span> <span id="price">{{item.price}}</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -69,6 +69,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     section{
+        a {
+        text-decoration: none;
+        color: black;
+         }
         padding-bottom: 100px;
         text-align: center;
 
