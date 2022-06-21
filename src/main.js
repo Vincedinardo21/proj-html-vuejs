@@ -18,6 +18,10 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faTruck } from '@fortawesome/free-solid-svg-icons'
+import { faStore } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faUser)
@@ -31,6 +35,10 @@ library.add(faFacebookF)
 library.add(faTwitter)
 library.add(faInstagram)
 library.add(faYoutube)
+library.add(faTruck)
+library.add(faStore)
+library.add(faDollarSign)
+library.add(faCreditCard)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

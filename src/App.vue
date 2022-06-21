@@ -64,7 +64,7 @@ export default {
 
 [class*="col-"] {
   // Debug
-  border: 1px solid black;
+  //border: 1px solid black;
   min-height: 50px;
 }
 

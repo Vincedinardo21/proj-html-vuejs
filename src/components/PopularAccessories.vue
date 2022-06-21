@@ -23,10 +23,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 icon-container">
-                            <div>Free woldwide deliveries</div>
-                            <div>Fine store near you</div>
-                            <div>Best price guarranteed</div>
-                            <div>All credit card accepted</div>
+                            <div>
+                                <div><font-awesome-icon icon="fa-solid fa-truck" /></div>
+                                <div>Free worldwide deliveries</div>
+                            </div>
+                            <div>
+                                <div><font-awesome-icon icon="fa-solid fa-store" /></div>
+                                <div>Fine store near you</div>
+                            </div>
+                            
+                            <div>
+                                <div><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
+                                <div>Best price guarranteed</div>
+                            </div>
+                            
+                            <div>
+                                <div><font-awesome-icon icon="fa-solid fa-credit-card" /></div>
+                                <div>All credit card accepted</div>
+                            </div>
                         </div>
                     </div>
                 </div>
