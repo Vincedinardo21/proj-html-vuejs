@@ -10,7 +10,7 @@
         <!-- Browse by category -->
         <BrowseBy/>
         <!-- Users testimonials -->
-
+        <UserTestimonials/>
         <!-- Get tips -->
 
         <!-- Accessories -->
@@ -29,6 +29,7 @@ import MyHeader from './components/MyHeader.vue'
 import MyJumbotron from './components/MyJumbotron.vue'
 import MyFooter from './components/MyFooter.vue'
 import BrowseBy from './components/BrowseBy.vue'
+import UserTestimonials from './components/UserTestimonials.vue'
 
 export default {
   name: 'App',
@@ -36,7 +37,8 @@ export default {
     MyHeader,
     MyJumbotron,
     MyFooter,
-    BrowseBy
+    BrowseBy,
+    UserTestimonials
 }
 }
 </script>
@@ -60,7 +62,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
-  color: #2c3e50;
+  // color: #2c3e50;
   //margin-top: 60px;
 }
 </style>

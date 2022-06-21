@@ -11,7 +11,7 @@
             <!-- Products card-->
             <div class="col-12">
                 <div class="products-container">
-                    <div class="card" v-for="(item, i) in products" :key="i">
+                    <div class="my-card" v-for="(item, i) in products" :key="i">
                         <img :src="item.image" :alt="item.text">
                         {{item.text}} ({{item.quantity}})
                     </div>
