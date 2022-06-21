@@ -9,7 +9,7 @@
                             <div class="my-card" v-for="(item, i) in testimonials" :key="i">
                                 <img :src="item.image" :alt="item.user">
                                 <p>{{item.text}}</p>
-                                <div>{{item.user}}</div>
+                                <div id="user">{{item.user}}</div>
                             </div>
                         </div>                
                     </div>
@@ -71,5 +71,12 @@ export default {
             width: 100px;
             border-radius: 50px;
         }
+
+        .my-card{
+            width: 300px;
+        }
+   }
+   #user{
+    color: rgb(156, 165, 159);
    }
 </style>

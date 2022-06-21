@@ -14,6 +14,10 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
 library.add(faUser)
@@ -23,6 +27,10 @@ library.add(faChevronDown)
 library.add(faClock)
 library.add(faCheck)
 library.add(faBookOpen)
+library.add(faFacebookF)
+library.add(faTwitter)
+library.add(faInstagram)
+library.add(faYoutube)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

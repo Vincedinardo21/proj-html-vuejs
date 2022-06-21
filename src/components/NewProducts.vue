@@ -9,7 +9,7 @@
                         <div class="my-card" v-for="(item, i) in newProducts" :key="i">
                             <img :src="item.image" :alt="item.text">
                             <h5>{{item.text}}</h5>
-                            <span>{{item.discount}}</span> <span>{{item.price}}</span>
+                            <span id="discount">{{item.discount}}</span> <span id="price">{{item.price}}</span>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ export default {
         }
 
         #latest{
-            color: green;
+            color: rgb(61, 111, 66);
             margin-top: 20px;
             margin-bottom: 50px;
         }
@@ -92,6 +92,14 @@ export default {
         }
         img {
             width: 410px;
+            margin: 20px 0;
+        }
+        #discount {
+            text-decoration: line-through;
+            font-size: 12px;
+        }
+        #price {
+            color: rgb(61, 111, 66);
         }
     }
 </style>

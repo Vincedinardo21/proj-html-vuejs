@@ -52,10 +52,10 @@
               </ul>
 
               <div class="icons">
-                icona
-                icona
-                icona
-                icona
+                <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                <font-awesome-icon icon="fa-brands fa-twitter" />
+                <font-awesome-icon icon="fa-brands fa-instagram" />
+                <font-awesome-icon icon="fa-brands fa-youtube" />
               </div>
             </div>
           </div>
@@ -90,9 +90,9 @@ export default {
       }
     }
     .btn-card {
+      
       margin: 25px 0;
             a {
-                
                 background-color: rgb(61, 111, 66);
                 color: white;
                 text-decoration: none;
@@ -102,8 +102,7 @@ export default {
         }
     .btn-email {
       margin: 25px 0;
-            input {
-                
+            input {          
                 background-color: white;
                 color: black;
                 text-decoration: none;
@@ -143,5 +142,9 @@ export default {
           }
         }
       }
+      [class*="fa-"]{
+        margin: 10px;
+      }
     }
+    
 </style>

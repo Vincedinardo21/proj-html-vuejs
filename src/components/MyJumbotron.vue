@@ -86,7 +86,9 @@ export default {
 
                 h2 {
                     font-size: 55px;
-                    margin: 45px 0;
+                    // margin: 45px 0;
+                    margin-top: 35px;
+                    margin-bottom: 50px;
                 }
             }
         }

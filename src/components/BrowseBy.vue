@@ -22,7 +22,7 @@
             <div class="col-12">
                 <div class="food-container">
                     <div class="food-card" v-for="(item, i) in foods" :key="i">
-                        <h2>{{item.text}}</h2>
+                        <h3>{{item.text}}</h3>
                         <h5>{{item.type}}</h5>
                         <img :src="item.image" :alt="item.text">
                         <div class="btn-card"><a href="#">Shop {{item.btn}}</a></div>
@@ -43,7 +43,7 @@
             <div class="col-12">
                 <div class="seller-container">
                     <div class="text-and-btn">
-                        <div class="greentx">All-time best sellers</div>
+                        <div class="green-text">All-time best sellers</div>
                         <div class="btn-card"><a href="#">View all products</a></div>
                     </div> 
                     <h3>Items everyone loves</h3>
@@ -165,8 +165,17 @@ export default {
             width: 310px;
         }
     }
+
+    .products-container{
+        img{
+            margin-bottom: 20px;
+        }
+    }
     .food-container {
         margin: 20px 0;
+        h3{
+            color: white;
+        }
     }
 
     .btn-card {
@@ -233,22 +242,22 @@ export default {
         justify-content: space-between;
 
         img {
+            margin-bottom: 20px;
             width: 310px;
         }
 
         .line {
             text-decoration: line-through;
             color: gray;
+            font-size: 12px;
         }
 
-        .green-text {
-            color: green;
-        }
+        
     }
 
-    .greentx{
-        color: green;
-    }
+    .green-text {
+            color: rgb(61, 111, 66);
+        }
 
     .seller-container {
         h3 {

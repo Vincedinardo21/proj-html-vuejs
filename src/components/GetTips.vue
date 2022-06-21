@@ -68,6 +68,7 @@ export default {
 
         img {
           width: 310px;
+          margin-bottom: 20px;
         }
 
         #data {
@@ -75,6 +76,9 @@ export default {
         }
     }
     .btn-card {
+      margin: 50px 0;
+      display: flex;
+      justify-content: center;
             a {
                 background-color: rgb(61, 111, 66);
                 color: white;
