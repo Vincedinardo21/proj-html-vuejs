@@ -15,7 +15,7 @@
         <!-- Get tips -->
         <GetTips/>
         <!-- Accessories -->
-
+        <PopularAccessories/>
         <!-- New products arrivals -->
         
       </main>
@@ -33,6 +33,7 @@ import BrowseBy from './components/BrowseBy.vue'
 import UserTestimonials from './components/UserTestimonials.vue'
 import OurNewsletter from './components/OurNewsletter.vue'
 import GetTips from './components/GetTips.vue'
+import PopularAccessories from './components/PopularAccessories.vue'
 
 
 export default {
@@ -44,7 +45,8 @@ export default {
     BrowseBy,
     UserTestimonials,
     OurNewsletter,
-    GetTips
+    GetTips,
+    PopularAccessories
 }
 }
 </script>
