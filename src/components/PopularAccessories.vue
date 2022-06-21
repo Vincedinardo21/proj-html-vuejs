@@ -23,24 +23,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 icon-container">
-                            <div>
+                            <a href="#">
                                 <div><font-awesome-icon icon="fa-solid fa-truck" /></div>
-                                <div>Free worldwide deliveries</div>
-                            </div>
-                            <div>
+                                <div class="colored">Free worldwide deliveries</div>
+                            </a>
+                            <a href="#">
                                 <div><font-awesome-icon icon="fa-solid fa-store" /></div>
-                                <div>Fine store near you</div>
-                            </div>
+                                <div class="colored">Find store near you</div>
+                            </a>
                             
-                            <div>
+                            <a href="#">
                                 <div><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
-                                <div>Best price guarranteed</div>
-                            </div>
+                                <div class="colored">Best price guarranteed</div>
+                            </a>
                             
-                            <div>
+                            <a href="#">
                                 <div><font-awesome-icon icon="fa-solid fa-credit-card" /></div>
-                                <div>All credit card accepted</div>
-                            </div>
+                                <div class="colored">All credit card accepted</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -58,6 +58,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .colored {
+        color: rgb(156, 165, 159);
+    }
+
+    h2{
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
     .img-container-L, .img-container-R {
         text-align: center;
         display: flex;
@@ -95,6 +109,11 @@ export default {
                 text-decoration: none;
                 padding: 10px 25px;
                 border-radius: 40px;
+
+                &:hover {
+                    background-color: rgb(61, 111, 66);
+                    color: white;
+                }
             }
         }
 </style>

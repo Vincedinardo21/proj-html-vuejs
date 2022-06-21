@@ -195,6 +195,11 @@ export default {
                 text-decoration: none;
                 padding: 10px 25px;
                 border-radius: 40px;
+
+                &:hover {
+                    background-color: rgb(61, 111, 66);
+                    color: white;
+                }
             }
         }
     .food-card {
@@ -227,7 +232,8 @@ export default {
         align-items: center;
 
         h2{
-            margin: 20px 0;
+            margin-top: 20px;
+            margin-bottom: 35px;
         }
     }
 

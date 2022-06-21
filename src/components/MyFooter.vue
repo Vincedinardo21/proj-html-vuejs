@@ -16,20 +16,20 @@
               <div class="Shop-list">
                 <ul>
                   <li><h5>Shop by brand</h5></li>
-                  <li>Bed</li>
-                  <li>Food</li>
-                  <li>Toys</li>
-                  <li>Transport</li>
+                  <li><a href="#">Bed</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Toys</a></li>
+                  <li><a href="#">Transport</a></li>
                 </ul>
               </div>
 
               <div class="Useful-list">
                 <ul>
                   <li><h5>Useful links</h5></li>
-                  <li>My account</li>
-                  <li>Orders</li>
-                  <li>Checkout</li>
-                  <li>Cart</li>
+                  <li><a href="#">My account</a></li>
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Cart</a></li>
                 </ul> 
               </div>
 
@@ -74,7 +74,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     footer{
-      
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
       li{
         list-style-type: none;
