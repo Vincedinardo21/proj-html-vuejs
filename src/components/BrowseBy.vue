@@ -35,7 +35,7 @@
                 <div class="arrivals-text">
                     <div>FIND THE BEST ANIMAL SUPPLIES</div>
                     <h2>New arrivals weekly</h2>
-                    <div class="btn-card"><a href="#">Learn more about us</a></div>
+                    <div class="btn-card2"><a href="#">Learn more about us</a></div>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
             <div class="col-12">
                 <div class="seller-container">
                     <div class="text-and-btn">
-                        <div>All-time best sellers</div>
+                        <div class="greentx">All-time best sellers</div>
                         <div class="btn-card"><a href="#">View all products</a></div>
                     </div> 
                     <h3>Items everyone loves</h3>
@@ -144,9 +144,20 @@ export default {
 <style scoped lang="scss">
     .container {
         text-align: center;
+
+        h2 {
+            margin-top: 100px;
+        }
+
+        p{
+            //margin-bottom: 50px;
+            margin: 50px auto;
+            width: 600px;
+        }
     }
 
     .products-container, .food-container{
+        margin-bottom: 60px;
         display: flex;
         justify-content: space-between;
 
@@ -162,6 +173,16 @@ export default {
             a {
                 background-color: rgb(61, 111, 66);
                 color: white;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 40px;
+            }
+        }
+
+    .btn-card2{
+            a {
+                background-color: white;
+                color: black;
                 text-decoration: none;
                 padding: 10px 25px;
                 border-radius: 40px;
@@ -186,6 +207,8 @@ export default {
         }        
     }
     .arrivals-banner {
+        color: white;
+        margin: 70px 0;
         height: 500px;
         background-image: url("../assets/img/banner-3-2x-scaled.jpg");
         background-size: cover;
@@ -193,6 +216,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        h2{
+            margin: 20px 0;
+        }
     }
 
     .text-and-btn {
@@ -201,6 +228,7 @@ export default {
     }
 
     .items-container {
+        margin: 60px 0;
         display: flex;
         justify-content: space-between;
 
@@ -215,6 +243,17 @@ export default {
 
         .green-text {
             color: green;
+        }
+    }
+
+    .greentx{
+        color: green;
+    }
+
+    .seller-container {
+        h3 {
+            text-align: left;
+            margin: 20px 0;
         }
     }
 
