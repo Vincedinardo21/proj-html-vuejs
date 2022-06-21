@@ -15,7 +15,6 @@
             </div>
             
             
-
             <!-- Image Background -->
             <div class="col-12 jumbo-banner">
                 <div class="jumbo-fade">
@@ -56,7 +55,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     .jumbo-fade{
-        background-color: rgba(0,0,0,0.3);       
+        background-color: rgba(0,0,0,0.3);     
     }
 
     .jumbo-up-back {
@@ -128,5 +127,10 @@ export default {
         img {
             width: 200px;
         }
+    }
+
+    .no-margin{
+        margin: 0;
+        padding: 0;
     }
 </style>

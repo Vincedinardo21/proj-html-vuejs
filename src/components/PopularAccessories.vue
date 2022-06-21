@@ -1,5 +1,5 @@
 <template>
-    <section>       
+    <div class="container-fluid">       
         <div class="row">
             <div class="col-6 img-container-L">
                 <div>FIND THE BEST ANIMAL SUPPLIES</div>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>

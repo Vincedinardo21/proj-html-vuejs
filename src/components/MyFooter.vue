@@ -3,7 +3,61 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2>Footer</h2>
+            <!-- <h2>Footer</h2> -->
+            <div class="my-content">
+
+              <div class="logo">
+                <img src="../assets/img/mobile-light-pet-logo-2x.png" alt="">
+                <div>1234 Avada Avenue Avadaville</div>
+                <div>Info@your-company.com</div>
+                <div>Call us: (1) 234 5678</div>
+              </div>
+
+              <div class="Shop-list">
+                <ul>
+                  <li><h5>Shop by brand</h5></li>
+                  <li>Bed</li>
+                  <li>Food</li>
+                  <li>Toys</li>
+                  <li>Transport</li>
+                </ul>
+              </div>
+
+              <div class="Useful-list">
+                <ul>
+                  <li><h5>Useful links</h5></li>
+                  <li>My account</li>
+                  <li>Orders</li>
+                  <li>Checkout</li>
+                  <li>Cart</li>
+                </ul> 
+              </div>
+
+              <div class="subscribe">
+                <h5>Subscribe to our newsletter</h5>
+                <div class="btn-email"><input type="email" placeholder="Insert your email..."></div>
+                <div class="btn-card"><a href="#">Subscribe</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="down-footer">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+              </ul>
+
+              <div class="icons">
+                icona
+                icona
+                icona
+                icona
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -19,5 +73,62 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  
+    footer{
+      color: white;
+      background-color: #2a382a;
+
+      img{
+        width: 200px;
+      }
+    }
+    .btn-card {
+      margin: 25px 0;
+            a {
+                
+                background-color: rgb(61, 111, 66);
+                color: white;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 40px;
+            }
+        }
+    .btn-email {
+      margin: 25px 0;
+            input {
+                
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 40px;
+            }
+        }
+
+    .subscribe{
+      background-color: aquamarine;
+      width: 300px;
+      border-radius: 5px;
+      padding: 30px;
+    }
+
+    .my-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .down-footer{
+      border-top: 1px solid gray;
+      text-align: center;
+      ul{
+        li{
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 20px;
+          a{
+            color: gray;
+            text-decoration: none;
+          }
+        }
+      }
+    }
 </style>
