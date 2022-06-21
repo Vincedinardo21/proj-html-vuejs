@@ -17,7 +17,7 @@
         <!-- Accessories -->
         <PopularAccessories/>
         <!-- New products arrivals -->
-        
+        <NewProducts/>
       </main>
 
       <!-- Footer -->
@@ -34,6 +34,8 @@ import UserTestimonials from './components/UserTestimonials.vue'
 import OurNewsletter from './components/OurNewsletter.vue'
 import GetTips from './components/GetTips.vue'
 import PopularAccessories from './components/PopularAccessories.vue'
+import NewProducts from './components/NewProducts.vue'
+
 
 
 export default {
@@ -46,7 +48,8 @@ export default {
     UserTestimonials,
     OurNewsletter,
     GetTips,
-    PopularAccessories
+    PopularAccessories,
+    NewProducts
 }
 }
 </script>
