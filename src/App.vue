@@ -11,8 +11,9 @@
         <BrowseBy/>
         <!-- Users testimonials -->
         <UserTestimonials/>
+        <OurNewsletter/>
         <!-- Get tips -->
-
+        <GetTips/>
         <!-- Accessories -->
 
         <!-- New products arrivals -->
@@ -30,6 +31,9 @@ import MyJumbotron from './components/MyJumbotron.vue'
 import MyFooter from './components/MyFooter.vue'
 import BrowseBy from './components/BrowseBy.vue'
 import UserTestimonials from './components/UserTestimonials.vue'
+import OurNewsletter from './components/OurNewsletter.vue'
+import GetTips from './components/GetTips.vue'
+
 
 export default {
   name: 'App',
@@ -38,7 +42,9 @@ export default {
     MyJumbotron,
     MyFooter,
     BrowseBy,
-    UserTestimonials
+    UserTestimonials,
+    OurNewsletter,
+    GetTips
 }
 }
 </script>
