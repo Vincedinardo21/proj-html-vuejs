@@ -188,14 +188,21 @@ export default {
         display: flex;
         justify-content: space-between;
 
+        
+        
+    }
+    .food-container{
         img {
             width: 310px;
         }
     }
-
     .products-container{
         img{
             margin-bottom: 20px;
+            width: 100%;
+        }
+        a{
+            width: 310px;
         }
     }
     .food-container {
