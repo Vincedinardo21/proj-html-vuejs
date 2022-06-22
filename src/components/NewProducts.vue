@@ -7,9 +7,16 @@
                     <div id="latest">Latest product</div>
                     <div class="card-container">
                         <a href="#" class="my-card" v-for="(item, i) in newProducts" :key="i">
-                            <img :src="item.image" :alt="item.text">
+                            <div id="myimg">
+                                <img :src="item.image" :alt="item.text">
+                            </div>
+                            
                             <h5>{{item.text}}</h5>
                             <span id="discount">{{item.discount}}</span> <span id="price">{{item.price}}</span>
+                            <div class="cart">
+                                <font-awesome-icon icon="fa-solid fa-square-check" />
+                                <div>VIEW CART</div> 
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -92,11 +99,39 @@ export default {
         flex-wrap: wrap;
 
         .my-card {
+            position: relative;
+            .cart{
+                color: white;
+                position: absolute;
+                left: 165px;
+                top: 170px;
+                display: none;
+                .fa-square-check{
+                    font-size: 40px;
+                    border: 1px solid black;
+                    border-radius: 50px;
+                    background-color: black;
+                    padding: 10px 13px;
+                }
+            }
+            #myimg{
+                background-color: black;
+                margin: 20px 0;
+                width: 410px;
+            }
             flex-basis: calc(100% / 3);
+            &:hover{
+                .cart{
+                    display: block;
+                }
+                img{
+                    opacity: 0.5;
+                }
+            }
         }
         img {
-            width: 410px;
-            margin: 20px 0;
+            width: 100%;
+            
         }
         #discount {
             text-decoration: line-through;

@@ -291,7 +291,7 @@ export default {
             }
                 img{
                     
-                    opacity: 0.4;
+                    opacity: 0.5;
                 }
             }
         }

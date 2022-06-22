@@ -7,7 +7,9 @@
             <div id="recent">Recent articles</div>
             <div class="card-container">
               <a href="#" class="my-card" v-for="(item, i) in tips" :key="i">
-                <img :src="item.image" :alt="item.text">
+                <div id="myimg">
+                  <img :src="item.image" :alt="item.text">
+                </div>
                 <div>{{item.text}}</div>
                 <div class="text-on-image">
                   <div>{{item.text}}</div>
@@ -76,13 +78,17 @@ export default {
 
         img {
           width: 310px;
-          margin-bottom: 20px;
+          
         }
 
         #data {
           font-size: 11px;
         }
         .my-card{
+          #myimg{
+            background-color: black;
+            margin-bottom: 20px;
+          }
             position: relative;
             .text-on-image{
               text-align: center;
@@ -102,9 +108,8 @@ export default {
             .text-on-image{
               display: block;
             }
-            img {
-              background-color: black;
-             
+            img{
+              opacity: 0.5;
             }
           }
         }
