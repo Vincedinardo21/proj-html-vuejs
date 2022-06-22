@@ -61,6 +61,9 @@
           </div>
         </div>
       </div>
+      <div class="copyright">
+        <font-awesome-icon icon="fa-regular fa-copyright" /><span>Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All rights Reserved | Powered by WordPress</span> 
+      </div>
     </footer>
 </template>
 
@@ -74,6 +77,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     footer{
+      .copyright{
+        background-color: black;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+          margin-left: 5px;
+        }
+      }
       a {
         color: white;
         text-decoration: none;
@@ -83,7 +97,7 @@ export default {
         list-style-type: none;
         margin: 30px 0;
       }
-      padding: 100px 0;
+      padding-top: 100px;
       color: white;
       background-color: #2a382a;
 

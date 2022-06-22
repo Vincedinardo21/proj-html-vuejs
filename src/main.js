@@ -23,6 +23,7 @@ import { faStore } from '@fortawesome/free-solid-svg-icons'
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 import { faSquareCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright} from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
 library.add(faUser)
@@ -41,6 +42,7 @@ library.add(faStore)
 library.add(faDollarSign)
 library.add(faCreditCard)
 library.add(faSquareCheck)
+library.add(faCopyright)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
