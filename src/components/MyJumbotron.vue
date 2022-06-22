@@ -16,7 +16,7 @@
             
             
             <!-- Image Background -->
-            <div class="col-12 jumbo-banner">
+            <div class="col-12 jumbo-banner no-gutter">
                 <div class="jumbo-fade">
                     <div class="container">
                         <div class="row">
@@ -54,6 +54,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    .no-gutter{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
     .jumbo-fade{
         background-color: rgba(0,0,0,0.3);     
     }

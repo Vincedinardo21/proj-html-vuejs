@@ -31,12 +31,14 @@
             </div>
 
             <!-- New arrivals weeckly -->
-            <div class="col-12 arrivals-banner">       
-                <div class="arrivals-text">
-                    <div>FIND THE BEST ANIMAL SUPPLIES</div>
-                    <h2>New arrivals weekly</h2>
-                    <div class="btn-card2"><a href="#">Learn more about us</a></div>
-                </div>
+            <div class="col-12 arrivals-banner no-gutter">
+                <div class="bg-fade">
+                    <div class="arrivals-text">
+                        <div>FIND THE BEST ANIMAL SUPPLIES</div>
+                        <h2>New arrivals weekly</h2>
+                        <div class="btn-card2"><a href="#">Learn more about us</a></div>
+                    </div>
+                </div>                    
             </div>
 
             <!-- Best sellers -->
@@ -165,6 +167,20 @@ export default {
             margin: 50px auto;
             width: 600px;
         }
+
+        
+    }
+    .bg-fade{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-gutter{
+        padding: 0;
     }
 
     .products-container, .food-container{
@@ -238,9 +254,7 @@ export default {
         background-image: url("../assets/img/banner-3-2x-scaled.jpg");
         background-size: cover;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
 
         h2{
             margin-top: 20px;
