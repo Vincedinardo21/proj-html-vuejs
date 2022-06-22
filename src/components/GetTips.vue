@@ -9,6 +9,10 @@
               <a href="#" class="my-card" v-for="(item, i) in tips" :key="i">
                 <img :src="item.image" :alt="item.text">
                 <div>{{item.text}}</div>
+                <div class="text-on-image">
+                  <div>{{item.text}}</div>
+                  <div id="tips">Tips & tricks</div>
+                </div>
                 <div id="data">{{item.data}}</div>
               </a>
             </div>
@@ -77,6 +81,32 @@ export default {
 
         #data {
           font-size: 11px;
+        }
+        .my-card{
+            position: relative;
+            .text-on-image{
+              text-align: center;
+              color: white;
+              font-size: 30px;
+              display: none;
+              position: absolute;
+              top: 100px;
+              left: 30px;
+
+              #tips{
+                font-size: 15px;
+              }
+            }
+            &:hover{
+              color: black;
+            .text-on-image{
+              display: block;
+            }
+            img {
+              background-color: black;
+             
+            }
+          }
         }
     }
     .btn-card {

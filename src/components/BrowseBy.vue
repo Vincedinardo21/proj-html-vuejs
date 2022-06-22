@@ -49,9 +49,16 @@
                     <h3>Items everyone loves</h3>
                     <div class="items-container">
                         <a href="#" class="item-card" v-for="(item, i) in items" :key="i">
-                            <img :src="item.image" :alt="item.text">
+                            <div id="myimg">
+                                <img :src="item.image" :alt="item.text">
+                            </div>
+                            
                             <h5>{{item.text}}</h5>
-                            <span class="line">{{item.discount}}</span> <span class="green-text">{{item.price}}</span> 
+                            <span class="line">{{item.discount}}</span> <span class="green-text">{{item.price}}</span>
+                            <div class="cart">
+                                <font-awesome-icon icon="fa-solid fa-square-check" />
+                                <div>VIEW CART</div> 
+                            </div> 
                         </a>  
                     </div>               
                 </div>              
@@ -252,8 +259,41 @@ export default {
         justify-content: space-between;
 
         img {
-            margin-bottom: 20px;
+            //margin-bottom: 20px;
             width: 310px;
+        }
+
+        .item-card{
+            #myimg{
+                background-color: black;
+                margin-bottom: 20px;
+            }
+            position: relative;
+            .cart{
+                display: none;
+                position: absolute;
+                top: 100px;
+                left: 120px;
+                color: white;
+
+                .fa-square-check{
+                    font-size: 40px;
+                    border: 1px solid black;
+                    border-radius: 50px;
+                    background-color: black;
+                    padding: 10px 13px;
+                }
+            }
+            &:hover{
+                .cart{
+                display: block;
+
+            }
+                img{
+                    
+                    opacity: 0.4;
+                }
+            }
         }
 
         .line {
