@@ -2,18 +2,22 @@
     <div class="container-fluid">       
         <div class="row">
             <div class="col-6 img-container-L">
-                <div>
-                    <div>FIND THE BEST ANIMAL SUPPLIES</div>
-                    <h2>Popular accessories</h2>
-                    <div class="btn-card"><a href="#">View all toys accessories</a></div>
-                </div>        
+                <div class="bg-fade">
+                    <div>
+                        <div>FIND THE BEST ANIMAL SUPPLIES</div>
+                        <h2>Popular accessories</h2>
+                        <div class="btn-card"><a href="#">View all toys accessories</a></div>
+                    </div> 
+                </div>       
             </div>
 
             <div class="col-6 img-container-R">
-                <div>
-                    <div>FIND THE BEST FOOD</div>
-                    <h2>New food arrival</h2>
-                    <div class="btn-card"><a href="#">View all food products</a></div>
+                <div class="bg-fade">
+                    <div>
+                        <div>FIND THE BEST FOOD</div>
+                        <h2>New food arrival</h2>
+                        <div class="btn-card"><a href="#">View all food products</a></div>
+                    </div>
                 </div>       
             </div>
         </div>
@@ -64,6 +68,15 @@ export default {
         text-decoration: none;
     }
 
+    .bg-fade{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.3);
+    }
+
     .colored {
         color: rgb(156, 165, 159);
     }
@@ -73,10 +86,9 @@ export default {
         margin-bottom: 35px;
     }
     .img-container-L, .img-container-R {
+        padding: 0;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
         background-size: cover;
         height: 500px;
         color: white;
